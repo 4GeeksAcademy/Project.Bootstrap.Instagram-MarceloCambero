@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instagram Bootstrap</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://kit.fontawesome.com/e630573f97.css"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+
+
+    <!-- NAV BAR -->
+    <nav class="navbar navbar-light bg-light py-2">
+      <div class="container-fluid">
+        <div class="d-flex w-100 justify-content-between">
+          <div class="position-relative d-flex align-items-center">
+            <i class="fa-brands fa-instagram fa-2x me-2"></i>
+            <h5 class="d-inline-block fs-5 mb-0">Instagram</h5>
+          </div>
+          <div class="d-flex gap-2 align-items-center">
+            <button
+              type="button"
+              class="btn btn-success btn-sm"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              Crear una nueva publicación
+            </button>
+            <div class="dropdown">
+              <button
+                class="btn btn-secondary dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="fa-solid fa-gear"></i>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li><a class="dropdown-item" href="#">Perfil</a></li>
+                <li><a class="dropdown-item" href="#">Accesibilidad</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Privacidad y datos</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item text-danger" href="#"
+                    >Cerrar sesión</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+
+
+    <!-- MODAL -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Crear una nueva publicación
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Cerrar"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="caption" class="col-form-label"
+                  ><h6>Caption:</h6></label
+                >
+                <textarea
+                  class="form-control"
+                  placeholder="Añade el caption de tu publicación aquí"
+                  id="caption"
+                ></textarea>
+              </div>
+              <div class="mb-3 d-flex">
+                <button
+                  type="button"
+                  class="col-1 border rounded p-1 m-1 btn-light"
+                >
+                  <i class="fa-solid fa-camera"></i>
+                </button>
+                <button
+                  type="button"
+                  class="col-1 border rounded p-1 m-1 btn-light"
+                >
+                  <i class="fa-solid fa-location-dot"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cerrar
+            </button>
+            <button type="button" class="btn btn-success">Publicar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- NAV PILLS -->
+
+    <div class="container-fluid py-2">
+      <ul
+        class="nav nav-pills justify-content-center"
+        id="v-pills-tab"
+        role="tablist"
+      >
+        <li class="nav-item" role="presentation">
+          <a
+            class="nav-link active"
+            id="v-pills-home-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#v-pills-home"
+            type="button"
+            role="tab"
+            aria-controls="v-pills-home"
+            aria-selected="true"
+          >
+            <i class="fa-solid fa-table-cells"></i>
+          </a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a
+            class="nav-link"
+            id="v-pills-profile-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#v-pills-profile"
+            type="button"
+            role="tab"
+            aria-controls="v-pills-profile"
+            aria-selected="false"
+          >
+            <i class="fa-solid fa-square"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="tab-content" id="v-pills-tabContent">
+      <div
+        class="tab-pane fade show active"
+        id="v-pills-home"
+        role="tabpanel"
+        aria-labelledby="v-pills-home-tab"
+        tabindex="0"
+      >
+        <div class="container">
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- Tarjeta 1 -->
+            <div class="col">
+              <div class="card">
+                <img
+                  src="pictures/bootstarp 1.jpg"
+                  class="card-img-top"
+                  style="height: 400px; object-fit: cover; display: block"
+                  alt="Imagen 1"
+                />
+                <div class="card-body" style="margin: 0; padding: 0">
+                </div>
+              </div>
+            </div>
+
+
+            <!-- Tarjeta 2 -->
+            <div class="col">
+              <div class="card">
+                <img
+                  src="pictures/bootstrap 2.jpg"
+                  class="card-img-top"
+                  style="height: 400px; object-fit: cover; display: block"
+                  alt="Imagen 2"
+                />
+                <div class="card-body" style="margin: 0; padding: 0">
+                  <!-- Contenido adicional si es necesario -->
+                </div>
+              </div>
+            </div>
+
+
+            <!-- Tarjeta 3 -->
+            <div class="col">
+              <div class="card">
+                <img
+                  src="pictures/bootstrap 3.jpg"
+                  class="card-img-top"
+                  style="height: 400px; object-fit: cover; display: block"
+                  alt="Imagen 3"
+                />
+                <div class="card-body" style="margin: 0; padding: 0">
+                  <!-- Contenido adicional si es necesario -->
+                </div>
+              </div>
+            </div>
+
+
+            <!-- Tarjeta 4 -->
+            <div class="col">
+              <div class="card">
+                <img
+                  src="pictures/bootstrap 4.jpg"
+                  class="card-img-top"
+                  style="height: 400px; object-fit: cover; display: block"
+                  alt="Imagen 4"
+                />
+                <div class="card-body" style="margin: 0; padding: 0">
+                  <!-- Contenido adicional si es necesario -->
+                </div>
+              </div>
+            </div>
+
+
+            <!-- Tarjeta 5 -->
+            <div class="col">
+              <div class="card">
+                <img
+                  src="pictures/bootstrap 5.jpg"
+                  class="card-img-top"
+                  style="height: 400px; object-fit: cover; display: block"
+                  alt="Imagen 5"
+                />
+                <div class="card-body" style="margin: 0; padding: 0">
+                  <!-- Contenido adicional si es necesario -->
+                </div>
+              </div>
+            </div>
+
+
+            <!-- Tarjeta 6 -->
+            <div class="col">
+              <div class="card">
+                <img
+                  src="pictures/bootstrap 6.jpg"
+                  class="card-img-top"
+                  style="height: 400px; object-fit: cover; display: block"
+                  alt="Imagen 6"
+                />
+                <div class="card-body" style="margin: 0; padding: 0">
+                  <!-- Contenido adicional si es necesario -->
+                </div>
+              </div>
+            </div>
+
+
+            <!-- Tarjeta 7 -->
+            <div class="col">
+              <div class="card">
+                <img
+                  src="pictures/bootstrap 7.jpg"
+                  class="card-img-top"
+                  style="height: 400px; object-fit: cover; display: block"
+                  alt="Imagen 7"
+                />
+                <div class="card-body" style="margin: 0; padding: 0">
+                  <!-- Contenido adicional si es necesario -->
+                </div>
+              </div>
+            </div>
+
+
+            <!-- Tarjeta 8 -->
+            <div class="col">
+              <div class="card">
+                <img
+                  src="pictures/bootstrap 8.jpg"
+                  class="card-img-top"
+                  style="height: 400px; object-fit: cover; display: block"
+                  alt="Imagen 8"
+                />
+                <div class="card-body" style="margin: 0; padding: 0">
+                  <!-- Contenido adicional si es necesario -->
+                </div>
+              </div>
+            </div>
+
+
+            <!-- Tarjeta 9 -->
+            <div class="col">
+              <div class="card">
+                <img
+                  src="pictures/bootstrap 9.jpg"
+                  class="card-img-top"
+                  style="height: 400px; object-fit: cover; display: block"
+                  alt="Imagen 9"
+                />
+                <div class="card-body" style="margin: 0; padding: 0">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="tab-pane fade"
+        id="v-pills-profile"
+        role="tabpanel"
+        aria-labelledby="v-pills-profile-tab"
+        tabindex="0"
+      >
+        <div
+          class="container d-flex flex-column justify-content-center align-items-center"
+        >
+
+
+          <!-- FOTOS LINEALES -->
+
+          <!--FOTO 1-->
+           
+          <div class="card mb-4" style="width: 600px">
+            <div
+              class="card-header d-flex justify-content-between align-items-center"
+            >
+              <h5>Marcelocambero</h5>
+              <p>12/12</p>
+            </div>
+
+            <img
+              src="pictures/bootstarp 1.jpg"
+              style="width: 100%"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <p>
+                <i class="fa-solid fa-heart">203.632 Likes</i>
+                <i class="fa-solid fa-comment">1.022 Comments</i>
+              </p>
+              <p>Visiting my girlfriend and her family in the netherlands</p>
+            </div>
+          </div>
+
+          <!--FOTO 2-->
+          <div class="card mb-4" style="width: 600px">
+            <div
+              class="card-header d-flex justify-content-between align-items-center"
+            >
+              <h5>Marcelocambero</h5>
+              <p>10/12</p>
+            </div>
+
+            <img
+              src="pictures/bootstrap 2.jpg"
+              style="width: 100%"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <p>
+                <i class="fa-solid fa-heart">52.368 Likes</i>
+                <i class="fa-solid fa-comment">400 Comments</i>
+              </p>
+              <p>Getting some milk in the old way, Yeehaw.</p>
+            </div>
+          </div>
+
+          <!--FOTO 3-->
+          <div class="card mb-4" style="width: 600px">
+            <div
+              class="card-header d-flex justify-content-between align-items-center"
+            >
+              <h5>Marcelocambero</h5>
+              <p>10/12</p>
+            </div>
+
+            <img
+              src="pictures/bootstrap 3.jpg"
+              style="width: 100%"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <p>
+                <i class="fa-solid fa-heart">7.548 Likes</i>
+                <i class="fa-solid fa-comment">900 Comments</i>
+              </p>
+              <p>Getting some cheese in the old way.</p>
+            </div>
+          </div>
+
+          <!--FOTO 4-->
+          <div class="card mb-4" style="width: 600px">
+            <div
+              class="card-header d-flex justify-content-between align-items-center"
+            >
+              <h5>Marcelocambero</h5>
+              <p>10/12</p>
+            </div>
+
+            <img
+              src="pictures/bootstrap 4.jpg"
+              style="width: 100%"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <p>
+                <i class="fa-solid fa-heart">105.741 Likes</i>
+                <i class="fa-solid fa-comment">202 Comments</i>
+              </p>
+              <p>Taking Oma for a bath</p>
+            </div>
+          </div>
+
+          <!--FOTO 5-->
+          <div class="card mb-4" style="width: 600px">
+            <div
+              class="card-header d-flex justify-content-between align-items-center"
+            >
+              <h5>Marcelocambero</h5>
+              <p>10/12</p>
+            </div>
+
+            <img
+              src="pictures/bootstrap 5.jpg"
+              style="width: 100%"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <p>
+                <i class="fa-solid fa-heart">5.023 Likes</i>
+                <i class="fa-solid fa-comment">444 Comments</i>
+              </p>
+              <p>Oma is my girlfriend</p>
+            </div>
+          </div>
+
+          <!--FOTO 6-->
+          <div class="card mb-4" style="width: 600px">
+            <div
+              class="card-header d-flex justify-content-between align-items-center"
+            >
+              <h5>Marcelocambero</h5>
+              <p>10/12</p>
+            </div>
+
+            <img
+              src="pictures/bootstrap 6.jpg"
+              style="width: 100%"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <p>
+                <i class="fa-solid fa-heart">763.258</i>
+                <i class="fa-solid fa-comment">3.000</i>
+              </p>
+              <p>Cheezy and sticky</p>
+            </div>
+          </div>
+
+          <!--FOTO 7-->
+          <div class="card mb-4" style="width: 600px">
+            <div
+              class="card-header d-flex justify-content-between align-items-center"
+            >
+              <h5>Marcelocambero</h5>
+              <p>10/12</p>
+            </div>
+
+            <img
+              src="pictures/bootstrap 7.jpg"
+              style="width: 100%"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <p>
+                <i class="fa-solid fa-heart">94.587 Likes</i>
+                <i class="fa-solid fa-comment">1.389 Comments</i>
+              </p>
+              <p>On the Edge</p>
+            </div>
+          </div>
+
+          <!--FOTO 8-->
+          <div class="card mb-4" style="width: 600px">
+            <div
+              class="card-header d-flex justify-content-between align-items-center"
+            >
+              <h5>Marcelocambero</h5>
+              <p>10/12</p>
+            </div>
+
+            <img
+              src="pictures/bootstrap 8.jpg"
+              style="width: 100%"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <p>
+                <i class="fa-solid fa-heart">64.578 Likes</i>
+                <i class="fa-solid fa-comment">2.014 Comments</i>
+              </p>
+              <p>i dont have a mouse, i have a cat</p>
+            </div>
+          </div>
+
+          <!--FOTO 9-->
+          <div class="card mb-4" style="width: 600px">
+            <div
+              class="card-header d-flex justify-content-between align-items-center"
+            >
+              <h5>Marcelocambero</h5>
+              <p>10/12</p>
+            </div>
+
+            <img
+              src="pictures/bootstrap 9.jpg"
+              style="width: 100%"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <p>
+                <i class="fa-solid fa-heart">75.124 Likes</i>
+                <i class="fa-solid fa-comment">3.578 Comments</i>
+              </p>
+              <p>beauty</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts de Bootstrap y FontAwesome -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/e630573f97.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
